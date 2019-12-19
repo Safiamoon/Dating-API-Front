@@ -5,32 +5,6 @@ import "./Login.scss"
 
 
 const LoginForm = (props) => {
-    // constructor(props) {
-    //     super(props);
-
-    //     this.state = {
-    //         email: "",
-    //         password: ""
-    //     };
-    // }
-
-    // validateForm() {
-    //     return this.state.email.length > 0 && this.state.password.length > 0;
-    // }
-
-    // handleChange = event => {
-    //     this.setState({
-    //         [event.target.id]: event.target.value
-    //     });
-    // }
-
-    // handleSubmit = event => {
-    //     event.preventDefault();
-    //     console.log("XXXX Clicked XXXX");
-
-    // }
-
-
     return (
         <div className="Login " >
             <Form onSubmit={props.handleSubmit}>
@@ -47,12 +21,14 @@ const LoginForm = (props) => {
                         placeholder="Password"
                         name="password"
                         type="password"
+                        
 
                     />
                 </Form.Group>
-                <Button
-                    block
+               <Button
+                    // block
                     type="submit"
+                    variant="info"
                 >
                     Login
                     </Button>

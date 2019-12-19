@@ -12,7 +12,7 @@ class App extends Component {
       <>
         <Nav />
         <div className="container">
-         <div className="title">Find your soulmate !</div>
+         <div className="title">Find your soulmate</div>
           <Router>
             <div>
               <Switch>
